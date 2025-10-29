@@ -109,3 +109,38 @@ int main()
 
 */
 
+/* Problem 5
+
+#include <iostream>
+using namespace std;
+
+bool strictly( int ar[],  int ar1[], int size){
+    int count=0;
+    if()
+    for(int i=0;i<size;i++){
+        if(ar[i]!=ar1[i]) count ++;
+    }
+    return (count==0)?true:false;
+}
+
+int main()
+{
+ int n,m;
+ cin>>n;
+ int arr[n];
+ for(int i=0;i<n;i++){
+     cin>>arr[i];
+ }
+ cin>>m;
+ int arr2[m];
+ for(int i=0;i<m;i++){
+     cin>>arr2[i];
+ }
+ if(n==m){
+ if(strictly(arr,arr2,n)) cout << "identical";
+ else cout<< "they are not identical";
+ }
+ else {cout<<"they are not identical"}
+    return 0;
+}
+*/
