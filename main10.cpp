@@ -145,7 +145,7 @@ int main()
 }
 */
 
-/*
+/*proble 6
 
 int main()
 {
@@ -164,5 +164,23 @@ int main()
 	cout<< "Digits "<< dig<<endl;
 	cout<< "Special "<< spe<< endl;
 	return 0;
+}
+*/
+/*Problem 7
+
+int main()
+{
+    int n,d;
+    cin>>n;
+   int  list[n];
+    for (int i=0;i<n;i++){
+        cin >>list[i];
+    }
+     sort(list,list+n);
+    
+    for(int li: list){
+        cout <<li<<" ";
+    }
+
 }
 */
