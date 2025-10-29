@@ -144,3 +144,25 @@ int main()
     return 0;
 }
 */
+
+/*
+
+int main()
+{
+	int n,up=0,low=0,dig=0,spe=0;
+	cin>>n;
+	char arr[n];
+	for(int i=0; i<n; i++) {
+		cin>>arr[i];
+		if(arr[i]>='0' and arr[i]<='9' ){ dig++;}
+		else if(arr[i]>='a' and arr[i]<='z' ){ low++;}
+		else if(arr[i]>='A' and arr[i]<='Z' ){ up++;}
+		else { spe++ ;} 
+	}
+    cout<< "Uppercase "<< up<< endl;
+	cout<< "Lowercase "<< low<<endl;
+	cout<< "Digits "<< dig<<endl;
+	cout<< "Special "<< spe<< endl;
+	return 0;
+}
+*/
