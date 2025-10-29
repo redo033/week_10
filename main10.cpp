@@ -184,3 +184,25 @@ int main()
 
 }
 */
+
+/* Problem 9
+#include <algorithm>
+void reversearr(int arr[],int st,int end){
+    for(int i=end-1;i>=0;i--){
+        cout<<arr[i]<<" ";
+    }
+}
+
+int main()
+{
+    int n,d;
+    cin>>n;
+   int  list[n];
+    for (int i=0;i<n;i++){
+        cin >>list[i];
+    }
+    reversearr(list,0,n);
+    
+
+}
+*/
