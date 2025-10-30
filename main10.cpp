@@ -145,7 +145,7 @@ int main()
 }
 */
 
-/*proble 6
+/*problem 6
 
 int main()
 {
@@ -184,7 +184,7 @@ int main()
 
 }
 */
-/*
+/* Problem 8
 
 #include <iostream>
 using namespace std;
@@ -225,6 +225,33 @@ int main()
 
 }
 */
+
+/* PROBLEM 10
+
+#include <iostream>
+using namespace std;
+
+void reverse(int arr[], int n) {
+    if (n == 0) return;
+    cout << arr[n-1] << " ";
+    reverse(arr, n-1);
+
+}
+int main(){
+    long long n;
+    cin>>n;
+    int arr[n];
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+    }
+ reverse(arr,n);
+
+
+}
+
+ */
+
+
 /* Problem 12
 #include <iostream>
 using namespace std;
