@@ -38,7 +38,7 @@ int main()
             sum+= (float)numbers[i];
         }
         return sum/size;
-    }d
+    }
 
     int main()
     {
@@ -183,7 +183,7 @@ int main()
     }
 
 }
-*//
+*/
 
 /* Problem 9
 #include <algorithm>
