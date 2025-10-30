@@ -108,4 +108,101 @@ int main()
 }
 
 */
-df
+
+/* Problem 5
+
+#include <iostream>
+using namespace std;
+
+bool strictly( int ar[],  int ar1[], int size){
+    int count=0;
+    if()
+    for(int i=0;i<size;i++){
+        if(ar[i]!=ar1[i]) count ++;
+    }
+    return (count==0)?true:false;
+}
+
+int main()
+{
+ int n,m;
+ cin>>n;
+ int arr[n];
+ for(int i=0;i<n;i++){
+     cin>>arr[i];
+ }
+ cin>>m;
+ int arr2[m];
+ for(int i=0;i<m;i++){
+     cin>>arr2[i];
+ }
+ if(n==m){
+ if(strictly(arr,arr2,n)) cout << "identical";
+ else cout<< "they are not identical";
+ }
+ else {cout<<"they are not identical"}
+    return 0;
+}
+*/
+
+/*proble 6
+
+int main()
+{
+	int n,up=0,low=0,dig=0,spe=0;
+	cin>>n;
+	char arr[n];
+	for(int i=0; i<n; i++) {
+		cin>>arr[i];
+		if(arr[i]>='0' and arr[i]<='9' ){ dig++;}
+		else if(arr[i]>='a' and arr[i]<='z' ){ low++;}
+		else if(arr[i]>='A' and arr[i]<='Z' ){ up++;}
+		else { spe++ ;}
+	}
+    cout<< "Uppercase "<< up<< endl;
+	cout<< "Lowercase "<< low<<endl;
+	cout<< "Digits "<< dig<<endl;
+	cout<< "Special "<< spe<< endl;
+	return 0;
+}
+*/
+/*Problem 7
+
+int main()
+{
+    int n,d;
+    cin>>n;
+   int  list[n];
+    for (int i=0;i<n;i++){
+        cin >>list[i];
+    }
+     sort(list,list+n);
+
+    for(int li: list){
+        cout <<li<<" ";
+    }
+
+}
+*/
+
+/* Problem 9
+#include <algorithm>
+void reversearr(int arr[],int st,int end){
+    for(int i=end-1;i>=0;i--){
+        cout<<arr[i]<<" ";
+    }
+}
+
+int main()
+{
+    int n,d;
+    cin>>n;
+   int  list[n];
+    for (int i=0;i<n;i++){
+        cin >>list[i];
+    }
+    reversearr(list,0,n);
+
+
+}
+*/
