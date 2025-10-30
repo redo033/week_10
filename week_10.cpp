@@ -204,5 +204,5 @@ int main()
     reversearr(list,0,n);
 
 
-}
+}d
 */
