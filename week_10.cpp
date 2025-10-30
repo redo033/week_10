@@ -145,7 +145,7 @@ int main()
 }
 */
 
-/*proble 6
+/*problem 6
 
 int main()
 {
@@ -157,7 +157,7 @@ int main()
 		if(arr[i]>='0' and arr[i]<='9' ){ dig++;}
 		else if(arr[i]>='a' and arr[i]<='z' ){ low++;}
 		else if(arr[i]>='A' and arr[i]<='Z' ){ up++;}
-		else { spe++ ;}
+		else { spe++ ;} 
 	}
     cout<< "Uppercase "<< up<< endl;
 	cout<< "Lowercase "<< low<<endl;
@@ -177,14 +177,33 @@ int main()
         cin >>list[i];
     }
      sort(list,list+n);
-
+    
     for(int li: list){
         cout <<li<<" ";
     }
 
 }
 */
+/* Problem 8
 
+#include <iostream>
+using namespace std;
+int main()
+{
+int arr[6]={0},d;
+srand(time(0));
+   for(int i=0;i<10000;i++){
+
+       d=rand()%6;
+       arr[d]=arr[d]+1;
+   }
+   for(int ch: arr){
+    cout<<ch<<" ";
+
+   }
+    return 0;
+}
+ */
 /* Problem 9
 #include <algorithm>
 void reversearr(int arr[],int st,int end){
@@ -202,7 +221,83 @@ int main()
         cin >>list[i];
     }
     reversearr(list,0,n);
+    
 
-
-}d
+}
 */
+
+/* PROBLEM 10
+
+#include <iostream>
+using namespace std;
+
+void reverse(int arr[], int n) {
+    if (n == 0) return;
+    cout << arr[n-1] << " ";
+    reverse(arr, n-1);
+
+}
+int main(){
+    long long n;
+    cin>>n;
+    int arr[n];
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+    }
+ reverse(arr,n);
+
+
+}
+
+ */
+/* Problem 11
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    long long n,target;
+    cin>>n;
+    int arr[n];
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+    }
+    cout<<"target ";
+    cin>>target;
+    for(int i=0;i<n;i++){
+        for(int j=i+1;j<n;j++){
+
+            if(arr[j]+arr[i]==target){
+                cout<<'['<<i<<","<<j<<']';
+            }
+        }
+    }
+
+}
+*/
+
+
+/* Problem 12
+#include <iostream>
+using namespace std;
+int main(){
+    long long n;
+    cin>>n;
+    int arr[n];
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+    }
+    for(int i=0;i<n-2;i++){
+        if( arr[i]!=arr[i+1] and arr[i]!=arr[i+2]){
+            cout<<i+1;break;
+        }
+        else if(arr[i]==arr[i+1] and arr[i]!=arr[i+2]){
+            cout<<(i+2)+1;break;
+        }
+        else if (arr[i]!=arr[i+1] and arr[i]==arr[i+2]){
+            cout<<(i+1)+1;break;
+        }
+    }
+
+}
+ */
