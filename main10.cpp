@@ -250,6 +250,31 @@ int main(){
 }
 
  */
+/* Problem 11
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    long long n,target;
+    cin>>n;
+    int arr[n];
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+    }
+    cout<<"target ";
+    cin>>target;
+    for(int i=0;i<n;i++){
+        for(int j=i+1;j<n;j++){
+
+            if(arr[j]+arr[i]==target){
+                cout<<'['<<i<<","<<j<<']';
+            }
+        }
+    }
+
+}
+*/
 
 
 /* Problem 12
