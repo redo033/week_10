@@ -38,7 +38,7 @@ int main()
             sum+= (float)numbers[i];
         }
         return sum/size;
-    }
+    }d
 
     int main()
     {
